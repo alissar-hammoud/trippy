@@ -1,0 +1,32 @@
+.trips-container .trip-card {
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+.trips-container .trip-card .trip-image {
+    border-radius: 5px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.trips-container .trip-card .trip-title {
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.trips-container .trip-card .trip-desc {
+    line-height: 1.4;
+}
+
+@media screen and (max-width:900px) {
+    .trips-container .trip-card .trip-image {
+        height: 350px;
+    }
+}

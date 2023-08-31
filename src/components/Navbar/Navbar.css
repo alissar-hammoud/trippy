@@ -1,0 +1,119 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    min-height: 80px;
+    width: 95vw;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: white;
+    -webkit-box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+nav h3 {
+    font-size: 32px;
+}
+
+nav .nav-btn,
+nav .nav-menu {
+    display: none;
+}
+
+nav .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+nav .nav-items ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav .nav-items ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+nav .nav-items .btn-signup {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    nav {
+        width: 100vw;
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+
+    nav .nav-btn {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    nav .nav-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav .nav-menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav .nav-menu ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    nav .nav-menu .btn-signup {
+        padding: 10px 20px;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: lightgrey;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav .hidden {
+        display: none;
+    }
+}
